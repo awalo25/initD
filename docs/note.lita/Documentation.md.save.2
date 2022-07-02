@@ -1,0 +1,339 @@
+
+# RÉPUBLIQUE DU SÉNÉGAL
+
+
+   ![](./a.png)
+
+
+# UNIVERSITE CHEIKH ANTA DIOP DE DAKAR
+
+
+   ![](./b.png)
+
+
+
+# ECOLE SUPERIEURE POLYTECHNIQUE
+ 
+  *DEPARTEMENT GENIE INFORMATIQUE*
+
+ 
+   ![](./c.png)
+
+
+###  MEMOIRE DE FIN DE CYCLE
+ 
+   Pour l’obtention du
+ 
+    DIPLÔME TECHNICIEN SUPERIEUR  EN TELECOMMUNICATIONS ET RESEAUX
+
+
+  ![](./c.png)
+
+
+*SUJET* :
+
+      Mise en place d'une plateforme de collaboration pour  les  chercheurs du 
+     labo LITA de l'UCAD
+
+ ![](./c.png)
+
+
+*Lieu du stage* :** Laboratoire d'Informatique, Télécommunications et Applications (L.I.T.A.)**
+
+*Période* : *01/06/2022 – 15/07/2022*
+
+
+![](./c.png)
+
+
+Présenté et soutenu par :
+
+**AWA LO**
+
+**AARON JUNIOR CHIENNE**
+
+Professeur encadrant:
+
+**PR SAMUEL OUYA**
+
+![](./c.png)
+
+
+     Année universitaire : 2021 – 2022
+
+![](./c.png)
+
+
+
+
+
+
+
+
+
+
+
+### Dédicaces
+
+ALKHAMDOULILLAH, nous rendons grâce à ALLAH, Le Tout Miséricordieux, Le Très
+Miséricordieux.
+Nous dédions ce mémoire à :
+
+• A nos très chers parents, aucune dédicace ne saurait exprimer l’amour, l’estime et le
+respect que nous avons à votre égard. Ce travail est le fruit des nombreux efforts que vous
+avez consentis pour notre éducation ;
+
+• Nos frères et sœurs ;
+
+• Nos familles : oncles, tantes, cousines et cousins ;
+
+• Nos amis, , camarades de promotions ;
+
+• Tout le département Génie Informatique ;
+
+• Nos collègues ;
+
+• Les étudiants de la promotion
+
+
+
+
+
+
+
+
+
+
+
+### Remerciements
+
+ALLAH SWT ;
+
+• Notre professeur encadrant, le Pr Samuel OUYA pour sa disponibilité, ses conseils et
+son assistance ;
+
+
+• L’ensemble des professeurs du département Génie Informatique ;
+
+• L’ensemble du personnel de la structure d’accueil du stage, L.I.T.A. du département
+Génie Informatique (Laboratoire d’Informatique, Télécommunications et Applications) ;
+
+• Toutes les personnes qui de près ou de loin, ont contribué à la réalisation de ce
+document.
+
+
+
+
+
+
+
+
+
+### Résumé
+
+
+Ce document présente le rapport de notre stage effectué au sein du **Laboratoire
+d’Informatique, Télécommunications et Applications (L.I.T.A.)**  du département Génie
+Informatique de l’École Supérieure Polytechnique de Dakar et s’insère dans le cadre d’un stage
+de fin de cycle pour l’obtention du **Diplôme Technicien Supérieur (DST) en
+Télécommunications et Réseaux**. Notre travail est intitulé :
+
+  **Mise en place d'une plateforme de collaboration pour  les  chercheurs du labo LITA de l'UCAD**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Table des matières
+
+
+DÉDICACES ...............................................................................................I 
+
+REMERCIEMENTS ..........................................................................................II
+
+RÉSUMÉ ...............................................................................................III
+
+
+INTRODUCTION ...................................................................................1
+
+
+
+CHAPITRE 1 : PRESENTATION GENERALE ......................................................................... 
+
+1.1.PRÉSENTATION DE LA STRUCTURE D’ACCUEIL ....................................................................... 
+
+1.2.PRÉSENTATION DU SUJET.......................................................................................... 
+
+1.2.1. Contexte du sujet .....................................................................................
+
+1.2.2. Problématique........................................................................................
+
+1.2.3. Résultats attendus ......................................................................................
+
+
+
+CHAPITRE 2 : PRESENTATION DES OUTILS DU SITE .....................................................................
+
+ 
+
+2.1. Katex.................................................................
+
+
+   2.1.1. Présentation katex............................................... 
+ 
+   2.1.2. Installation Katex................................................
+
+
+2.2.  Latex.......................................................................
+
+   2.2.1. Présentation latex ....................................................
+
+   2.2.2. Installation latex ......................................................
+
+
+2.4. Pandoc.....................................................................
+ 
+  2.3.1. Présentation pandoc ............................................................
+ 
+  2.3.2. Installation pandoc ................................................................
+
+
+2.4. Git.........................................................................................
+
+   2.4.1. Présentation git .......................................................
+ 
+   2.4.2. Installation git ...............................................................
+
+
+
+CHAPITRE 3 :ETUDE DÉTAILLÉ DE DOCUSAURUS.....................................................................
+
+3.1. Qu'est ce que Docusaurus.....................................................................
+
+3.2. Fonctionnalité..............................................................
+
+3.4. Avantage...............................................................
+
+3.3. Contrainte.............................................................
+
+3.4. Installation........................................................ 
+
+
+
+CHAPITRE 4 :MISE EN OEUVRE DU SITE .....................................................................
+	
+4.1. Création du site .............................................................
+
+4.2. Création d'un document..................................................
+ 
+4.3. Création d'un article de blog .............................................
+
+4.4. Fonctionnalité de démarquage ............................................
+
+4.5.  Déploiement du site...................................................... 
+
+
+
+
+
+
+
+
+
+
+###  INTRODUCTION
+
+
+Une plateforme de travail colloboratif est un espace de travail virtuel. c'est un outil parfois sous la 
+forme d'un site internet qui centralise tous les outils liés à la conduite d'un projet ,la gestion des 
+connaissances et le met à la disposition des acteurs.Son but est de faciliter optimiser la communication entre 
+les individus dans le cadre travail ou d'une autre quelconque tâche.
+
+Notre projet au sein du  Laboratoire d’Informatique,Télécommunications et Applications (L.I.T.A.) du département 
+Génie Informatique qui est une structure de recherche, d’études et de travaux sur l’informatique les télécommunications 
+et les systèmes et matériels informatiques. consiste à déployer un site tel que *Docusaurus* qui est un générateur de site 
+statique .Il construit une application monopage avec une naviguation rapide côté client en exploitant toute la puissance pour 
+rendre le site interactif .Ceci pourra permettre aux chercheurs du labo de coopérer pour mettre en leur idées dans l'objet de
+ résoudre une problématique .
+
+Le présent mémoire  est organisé comme suit :
+
+Le premier chapitre intitulé « Présentation Générale » sera consacré à la présentation du structure  d’accueil, ainsi que la 
+mise en contexte du projet.Nous présenterons l’étude de l’existant qui consiste à décrire le fonctionnement de la plateforme .
+
+Par ailleurs, un second chapitre rendra compte de la «Présentation des outils»,
+ Ce chapitre proposera  la description détaillée des outils utilisés ainsi que leur installation.
+
+De surcroît, un troisième chapitre sera entièrement dédié à « l'étude détaillé du site Docusaurus » . Cela
+dit, il sera question d'apporter des explications nécessaires sur  l’architecture du système et le matériel de déploiement du site 
+.Le tout accompagné des scénarios et descriptions nécessaires.
+
+Le quatrième et le dernier chapitre sera voué à «la mise en oeuvre du site »qui aura pour objectif d’expliquer tout le processus 
+de mise en place du site ainsi que son utilisation . 
+
+
+Enfin, notre rapport se terminera par une conclusion générale résumant notre travail,
+présentant les acquis techniques et personnels et proposant quelques perspectives pour
+l’amélioration de notre plateforme.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+###   CHAPITRE 1 : PRÉSENTATION GÉNÉRALE
+
+
+###  Introduction
+
+Le premier chapitre sera dédié pour la présentation générale du projet. Tout d’abord, nous
+allons présenter la structure  d’accueil. Ensuite, nous allons décrire brièvement le sujet, la
+problématique à résoudre, ainsi que l’étude de résultats attendus .
+
+
+
+
+
+
+### 1.1.Présentation de la structure d'acceuil
+
+
+
+
+
+
+
+### 1.2.Présentation sujet
+
+
